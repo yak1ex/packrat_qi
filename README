@@ -1,0 +1,10 @@
+This is an experimental code for packrat parser on Boost Spirit Qi.
+
+It is naively implemented, therefore it is very slow (e.g. 100 times as slow) for ordinary grammar.
+However, complexity is limited to linear. It might be meaningful for pathological cases.
+
+Though specializations and operator overloads are injected under boost namespace, Boost Spirit Qi source codes themselves are not touched.
+If you want to try packrat parser, all you need is to include packrat.hpp, to replace rule with packrat_rule and grammar with packrat_grammar. If you want to use packrat_grammar, you need to include packrat_grammar.hpp, also.
+
+I will add additional explanation later.
+
